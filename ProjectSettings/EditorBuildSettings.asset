@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Jerry'sScene/room1.unity
+    guid: 35faabd760f6d4b52a59ee7b16ec4268
+  - enabled: 1
+    path: Assets/Scenes/Jerry'sScene/room2.unity
+    guid: c616570d982744d75a2bc6a364a5a018
   m_configObjects: {}
