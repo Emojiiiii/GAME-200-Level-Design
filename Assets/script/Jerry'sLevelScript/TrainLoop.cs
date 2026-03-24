@@ -1,4 +1,4 @@
-using UnityEngine;
+using UnityEngine;// 过场火车脚本，放在火车上，设置速度和重生位置，火车会不断从左向右移动，离开右侧后重生到左侧
 
 public class TrainLoop : MonoBehaviour
 {

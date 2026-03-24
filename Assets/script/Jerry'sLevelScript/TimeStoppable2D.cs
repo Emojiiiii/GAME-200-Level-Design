@@ -1,4 +1,4 @@
-using UnityEngine;
+using UnityEngine;// 时间暂停组件，放在需要被暂停的物体上，自动监听 TimePauseManager 的事件
 
 public class TimeStoppable2D : MonoBehaviour
 {

@@ -1,4 +1,4 @@
-using System.Collections;
+using System.Collections;// 过场镜头脚本，放在场景中一个空物体上，设置摄像机、玩家和敌人，按顺序移动摄像机到敌人位置，停留一段时间，再移回玩家位置，最后开启玩家控制和敌人追逐
 using UnityEngine;
 
 public class IntroCameraPan : MonoBehaviour
