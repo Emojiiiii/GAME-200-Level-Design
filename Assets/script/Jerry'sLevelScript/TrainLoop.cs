@@ -1,5 +1,7 @@
-using UnityEngine;// 过场火车脚本，放在火车上，设置速度和重生位置，火车会不断从左向右移动，离开右侧后重生到左侧
+using UnityEngine;
 
+// 过场火车脚本，放在火车上，设置速度和重生位置
+// 火车会不断从左向右移动，离开右侧后重生到左侧
 public class TrainLoop : MonoBehaviour
 {
     public float speed = 10f;
@@ -11,16 +13,18 @@ public class TrainLoop : MonoBehaviour
 
     private SpriteRenderer sr;
     private float halfWidth;
+    private bool isMoving = true;
 
     void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
         if (sr != null) halfWidth = sr.bounds.extents.x;
-        else halfWidth = 0.5f; // 没有SpriteRenderer就给个兜底
+        else halfWidth = 0.5f; // 没有 SpriteRenderer 就给个兜底
     }
 
     void Update()
     {
+        if (!isMoving) return;
         if (TimePauseManager.IsPaused) return;
 
         transform.Translate(Vector2.right * speed * Time.deltaTime);
@@ -32,5 +36,21 @@ public class TrainLoop : MonoBehaviour
             float newX = spawnX - halfWidth - extraPadding;
             transform.position = new Vector3(newX, transform.position.y, transform.position.z);
         }
+    }
+
+    public void StartMoving()
+    {
+        isMoving = true;
+    }
+
+    public void StopMoving()
+    {
+        isMoving = false;
+    }
+
+    public void ResetTrain()
+    {
+        float newX = spawnX - halfWidth - extraPadding;
+        transform.position = new Vector3(newX, transform.position.y, transform.position.z);
     }
 }
