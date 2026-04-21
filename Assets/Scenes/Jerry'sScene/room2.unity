@@ -308,7 +308,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6248615289497789732, guid: 77cd3a2b8e0494475b752d830e4246b2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2967384193781287912, guid: 77cd3a2b8e0494475b752d830e4246b2, type: 3}
@@ -321,6 +322,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 601839705424359159, guid: 77cd3a2b8e0494475b752d830e4246b2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1852950942}
+    - targetCorrespondingSourceObject: {fileID: 601839705424359159, guid: 77cd3a2b8e0494475b752d830e4246b2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1852950943}
   m_SourcePrefab: {fileID: 100100000, guid: 77cd3a2b8e0494475b752d830e4246b2, type: 3}
 --- !u!1 &105541363
 GameObject:
@@ -2084,7 +2088,7 @@ MonoBehaviour:
   delayBeforeChase: 1
   cameraOffset: {x: 0, y: 0, z: -10}
   enemyChaseScript: {fileID: 1763208157}
-  playerMovementScript: {fileID: 1589313964}
+  playerMovementScript: {fileID: 0}
   cameraFollow: {fileID: 1896612355}
 --- !u!4 &1111837321
 Transform:
@@ -2638,17 +2642,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1589313964 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6248615289497789732, guid: 77cd3a2b8e0494475b752d830e4246b2, type: 3}
-  m_PrefabInstance: {fileID: 98323669}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1852950938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39a7f74dc8ac6428b9df011fc390e336, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1675772228
 GameObject:
   m_ObjectHideFlags: 0
@@ -3076,6 +3069,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashlightObject: {fileID: 1391494856}
+--- !u!114 &1852950943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852950938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b0cdbde3ed92c446a2ebfb16c161672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  jumpForce: 5
+  groundCheck: {fileID: 2090893927}
+  groundRadius: 0.2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  slopeCheckDistance: 0.4
+  maxSlopeAngle: 50
 --- !u!1 &1896612351
 GameObject:
   m_ObjectHideFlags: 0
@@ -3391,6 +3405,11 @@ Transform:
   - {fileID: 899886372}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2090893927 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4420793084322935657, guid: 77cd3a2b8e0494475b752d830e4246b2, type: 3}
+  m_PrefabInstance: {fileID: 98323669}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2139546615
 GameObject:
   m_ObjectHideFlags: 0
