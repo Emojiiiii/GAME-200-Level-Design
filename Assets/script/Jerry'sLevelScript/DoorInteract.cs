@@ -1,4 +1,4 @@
-using UnityEngine;
+using UnityEngine;// 门交互脚本，放在门上，玩家进入触发范围后按 F 键（可自定义）切换场景，可以做场景切换
 using UnityEngine.SceneManagement;
 
 public class DoorInteract : MonoBehaviour

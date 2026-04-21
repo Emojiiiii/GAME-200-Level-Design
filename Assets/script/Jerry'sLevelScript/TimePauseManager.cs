@@ -1,4 +1,4 @@
-using System;
+using System;// 时间暂停管理器，放在场景中一个空物体上，按 Q 键切换暂停状态
 using UnityEngine;
 
 public class TimePauseManager : MonoBehaviour

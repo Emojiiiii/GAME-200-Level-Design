@@ -122,6 +122,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &3939163
 GameObject:
   m_ObjectHideFlags: 0
@@ -28749,6 +28750,8 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.95199716}
   m_EdgeRadius: 0
+=======
+>>>>>>> 7cbd497a6124cd5dc7aa10f5dcf6916b834d452e
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -28842,6 +28845,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!114 &519420033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127501,10 +127505,13 @@ Transform:
   - {fileID: 1076808564}
   m_Father: {fileID: 955510635}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> 7cbd497a6124cd5dc7aa10f5dcf6916b834d452e
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+<<<<<<< HEAD
   - {fileID: 918514925}
   - {fileID: 519420032}
   - {fileID: 2125122384}
@@ -127534,3 +127541,6 @@ SceneRoots:
   - {fileID: 1876288773}
   - {fileID: 323986001}
   - {fileID: 1340180645}
+=======
+  - {fileID: 519420032}
+>>>>>>> 7cbd497a6124cd5dc7aa10f5dcf6916b834d452e
