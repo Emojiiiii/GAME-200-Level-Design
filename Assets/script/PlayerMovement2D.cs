@@ -27,11 +27,17 @@ public class PlayerMovement2D : MonoBehaviour
     {
         moveInput = Input.GetAxisRaw("Horizontal");
 
+        // 地面检测
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundLayer);
 
+        // 空格跳跃
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
+<<<<<<< HEAD
+            rb.velocity = new Vector2(rb.velocity.x, 0f); // 防止叠加导致跳太高/不稳定
+=======
             rb.velocity = new Vector2(rb.velocity.x, 0f);
+>>>>>>> 7cbd497a6124cd5dc7aa10f5dcf6916b834d452e
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
     }
@@ -41,6 +47,9 @@ public class PlayerMovement2D : MonoBehaviour
         rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
     }
 
+<<<<<<< HEAD
+    // 可选：在Scene里看到检测圈
+=======
     void LateUpdate()
     {
         if (shouldDetach)
@@ -73,6 +82,7 @@ public class PlayerMovement2D : MonoBehaviour
         }
     }
 
+>>>>>>> 7cbd497a6124cd5dc7aa10f5dcf6916b834d452e
     void OnDrawGizmosSelected()
     {
         if (groundCheck == null) return;
