@@ -13,7 +13,10 @@ GameObject:
   - component: {fileID: 7686720032193548178}
   - component: {fileID: 3148081259174761449}
   - component: {fileID: 6248615289497789732}
+<<<<<<< HEAD
   - component: {fileID: 2282572686413283486}
+=======
+>>>>>>> 7cbd497a6124cd5dc7aa10f5dcf6916b834d452e
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -34,7 +37,10 @@ Transform:
   m_LocalScale: {x: 0.3, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+<<<<<<< HEAD
   - {fileID: 1863920548177357350}
+=======
+>>>>>>> 7cbd497a6124cd5dc7aa10f5dcf6916b834d452e
   - {fileID: 4420793084322935657}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -77,14 +83,22 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2128857539
+<<<<<<< HEAD
   m_SortingLayer: 0
+=======
+  m_SortingLayer: 2
+>>>>>>> 7cbd497a6124cd5dc7aa10f5dcf6916b834d452e
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8e46747414f85124e98ddbe86c6c6eca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
+<<<<<<< HEAD
   m_Size: {x: 12, y: 20}
+=======
+  m_Size: {x: 1, y: 1}
+>>>>>>> 7cbd497a6124cd5dc7aa10f5dcf6916b834d452e
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -154,7 +168,11 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 12, y: 20}
+<<<<<<< HEAD
     newSize: {x: 12, y: 20}
+=======
+    newSize: {x: 1, y: 1}
+>>>>>>> 7cbd497a6124cd5dc7aa10f5dcf6916b834d452e
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -171,6 +189,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 601839705424359159}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: 3b0cdbde3ed92c446a2ebfb16c161672, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -280,6 +299,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+=======
+  m_Script: {fileID: 11500000, guid: 39a7f74dc8ac6428b9df011fc390e336, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  jumpForce: 5
+  groundCheck: {fileID: 4420793084322935657}
+  groundRadius: 0.15
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+>>>>>>> 7cbd497a6124cd5dc7aa10f5dcf6916b834d452e
 --- !u!1 &7373701545031320324
 GameObject:
   m_ObjectHideFlags: 0
